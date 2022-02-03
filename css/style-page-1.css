@@ -1,0 +1,430 @@
+:root {
+    --color: #ba8f9f;
+    --border: #4a0a1e;
+}
+
+.container {
+    width: 929px;
+    margin: 0;
+}
+
+.info-product-home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 76%;
+    margin-top: 50px;
+}
+
+.info-product-home span {
+    color: var(--color);
+    padding-right: 6px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.info-product-home i {
+    color: #ba8f9f;
+}
+
+.grid-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 73%;
+    margin-left: 39px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 23px;
+    padding-bottom: 3px;
+}
+
+.grid-list .select {
+    font-size: 20px;
+    color: var(--color);
+}
+
+.grid-list .select span {
+    margin-left: 10px;
+}
+
+.grid-list .select i {
+    padding: 5px;
+}
+
+.select i.active {
+    color: #ffcd5a;
+}
+
+.grid-list .result span:first-child {
+    font-size: 18px;
+    color: var(--color);
+    padding: 5px;
+}
+
+.grid-list .result span:last-child {
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.market {
+    position: relative;
+}
+
+.market .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.market.grid-view .box {
+    width: 300px;
+    min-height: 300px;
+    border-bottom: 2px solid #4a0a1e;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.market.grid-view .list-view-info {
+    display: none;
+}
+
+.market.grid-view .box:hover {
+    box-shadow: 0 4px 20px 0 #4a0a1e, 0 5px 0 2px #4a0a1e;
+}
+
+.market.grid-view .box .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 13px;
+    color: #ba8f9f;
+    cursor: pointer;
+}
+
+.market.grid-view .box .title p:hover,
+.market.grid-view .box .title:hover i {
+    color: #fa8d00;
+}
+
+.market.grid-view .box .title i {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+.market.grid-view .box .info-product {
+    text-align: right;
+    padding: 5px;
+}
+
+.market.grid-view .box .info-product button {
+    border-radius: 39px;
+    padding: 0px 8px;
+}
+
+.market.grid-view .box .info-product p {
+    padding: 13px 3px
+}
+
+.market.grid-view .box .sell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 9px 0;
+}
+
+.market.grid-view .box .sell li {
+    padding-left: 15px;
+}
+
+.market.grid-view .box .sell li:first-child {
+    border-radius: 27px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.market.grid-view .box .sell li:last-child {
+    padding: 0px 0 0 13px;
+    border: 1px solid yellow;
+    border-radius: 50px;
+    margin-left: 11px;
+}
+
+.market.grid-view .box .sell li img {
+    height: 24px;
+    width: 24px;
+}
+
+.market.grid-view .box .num-sell {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.market.grid-view .box .num-sell p {
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.market.grid-view .box .top-control {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.market.grid-view .box .top-control p {
+    margin: -3px 5px;
+    font-size: 15px;
+    color: #e5e5e5cc;
+}
+
+.market.grid-view .box .top-control i:first-child {
+    color: #ad2929;
+}
+
+.market.grid-view .box .top-control i:last-of-type {
+    color: #e5e5e5cc;
+    padding-left: 10px;
+}
+
+.market.grid-view .box .image {
+    width: calc(100% - 10px);
+    overflow: hidden;
+    padding: 9px;
+}
+
+.market.grid-view .box .image img {
+    padding: 19px;
+    text-align: center;
+    max-width: 100%;
+    transition: .3s;
+}
+
+.market.grid-view .box .image img:hover {
+    transform: scale(1.3);
+}
+
+
+/* list View*/
+
+.market.list-view {
+    position: relative;
+}
+
+.market.list-view .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.market.list-view .list-view-info {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.market.list-view .box {
+    width: 100%;
+    min-height: 294px;
+    border-bottom: 2px solid #4a0a1e;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.market.list-view .hide {
+    display: none;
+}
+
+.market.list-view .box:hover {
+    box-shadow: 0 4px 20px 0 #4a0a1e, 0 5px 0 2px #4a0a1e;
+}
+
+.market.list-view .title {
+    display: none;
+}
+
+.market.list-view .box .title-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 13px;
+    color: #ba8f9f;
+    cursor: pointer;
+}
+
+.market.list-view .box .title-list p:hover,
+.market.list-view .box .title-list:hover i {
+    color: #fa8d00;
+}
+
+.market.list-view .box .title-list i {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+.market.list-view .box .info-product {
+    text-align: right;
+    padding: 5px;
+    width: 66%;
+}
+
+.market.list-view .box .info-product button {
+    border-radius: 39px;
+    padding: 0px 8px;
+}
+
+.market.list-view .box .info-product p {
+    padding: 13px 3px
+}
+
+.market.list-view .box .sell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 9px 0;
+    position: absolute;
+    bottom: 58px;
+    right: 311px;
+}
+
+.market.list-view .box .sell li {
+    padding-left: 15px;
+}
+
+.market.list-view .box .sell li:first-child {
+    border-radius: 27px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.market.list-view .box .sell li:last-child {
+    padding: 0px 0 0 13px;
+    border: 1px solid yellow;
+    border-radius: 50px;
+    margin-left: 11px;
+}
+
+.market.list-view .box .sell li img {
+    height: 24px;
+    width: 24px;
+}
+
+.market.list-view .box .num-sell {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 15px;
+    right: 315px;
+}
+
+.market.list-view .box .num-sell p {
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.market.list-view .top-control {
+    display: none;
+}
+
+.market.list-view .box .top-control-list {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.market.list-view .box .top-control-list p {
+    margin: -3px 5px;
+    font-size: 15px;
+    color: #e5e5e5cc;
+}
+
+.market.list-view .box .top-control-list i:first-child {
+    color: #ad2929;
+}
+
+.market.list-view .box .top-control-list i:last-of-type {
+    color: #e5e5e5cc;
+    padding-left: 10px;
+}
+
+.market.list-view .box .image {
+    width: 278px;
+    overflow: hidden;
+    padding: 9px;
+    position: absolute;
+    left: 637px;
+    height: 280px;
+}
+
+.market.list-view .box .image img {
+    padding: 19px;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .5s;
+    height: 280px;
+    width: 278px;
+}
+
+.market.list-view .box .image img:hover {
+    transform: scale(1.3);
+}
+
+.container-f {
+    width: 100%;
+}
+
+.aside-serch {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 21%;
+    text-align: right;
+    padding: 11px;
+    border-left: 1px solid var(--border);
+    height: 818px;
+}
+
+.aside-serch h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+.aside-serch .box {
+    width: 98%;
+    border-bottom: 1px solid var(--border);
+    border-width: 1px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.aside-serch .box h5 {
+    font-size: 15px;
+}
+
+.aside-serch .box ul li label {
+    padding-right: 7px;
+    color: var(--color);
+}
+
+.aside-serch .main {
+    display: flex;
+}
+
+.aside-serch .over-border {
+    border: 1px solid var(--border);
+}
+
+.backgorund-section {
+    position: relative;
+}
